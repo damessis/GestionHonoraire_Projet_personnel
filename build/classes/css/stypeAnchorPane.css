@@ -1,0 +1,6 @@
+.anchorPane{
+    -fx-background-radius: 30;
+    /*-fx-background-color: #7A74AB;*/
+    -fx-background-color: linear-gradient(to right top, #d16ba5, #bd71b0, #a776b6, #927bb8, #7e7eb5, #797fb7, #7480b9, #6e81bb, #7581c6, #7e80cf, #8b7fd7, #997cde);
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.3), 10.0, 0.0, 0.0, 10.0); 
+}

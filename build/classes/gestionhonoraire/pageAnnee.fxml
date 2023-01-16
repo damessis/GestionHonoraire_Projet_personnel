@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1300.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionhonoraire.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="207.0" styleClass="leftPaneBackground" stylesheets="@../css/styleAllBackground.css">
+         <children>
+            <Button alignment="CENTER" graphicTextGap="7.0" layoutY="491.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="211.0" style="-fx-background-color: transparent;" styleClass="btn" stylesheets="@styleBtn.css" text="Annee-academique" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="CHEVRON_RIGHT" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+            <Pane layoutX="4.0" layoutY="2.0" prefHeight="144.0" prefWidth="207.0">
+               <children>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="HOME" layoutX="24.0" layoutY="58.0" size="25" />
+                  <Label layoutX="54.0" layoutY="38.0" prefHeight="25.0" prefWidth="113.0" text="Dashboard" textFill="#fcf9f9">
+                     <font>
+                        <Font name="Verdana Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnBack" layoutX="34.0" layoutY="599.0" mnemonicParsing="false" onAction="#btnBackAction" prefHeight="25.0" prefWidth="98.0" styleClass="buttonRetour" stylesheets="@../css/styleButton.css" text="Retour" />
+      <TableView fx:id="tableAnnee" layoutX="606.0" layoutY="128.0" prefHeight="379.0" prefWidth="673.0" styleClass="tableview" stylesheets="@../css/styleTableView.css">
+         <columns>
+            <TableColumn fx:id="col_idA" prefWidth="133.0" text="ID" />
+            <TableColumn fx:id="col_nomA" prefWidth="538.0" text="Annee-academique" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtAnnee" alignment="CENTER" layoutX="343.0" layoutY="289.0" prefHeight="29.0" prefWidth="220.0" promptText="entrer le nom de l'annee" styleClass="txtField" stylesheets="@../css/styleTxt.css" />
+      <Label layoutX="249.0" layoutY="289.0" prefHeight="25.0" prefWidth="115.0" styleClass="labelTextFiel" stylesheets="@../css/styleLabe.css" text="Annee:">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnValiderAnnee" layoutX="396.0" layoutY="356.0" mnemonicParsing="false" onAction="#btnValiderAnneeAction" prefHeight="25.0" prefWidth="115.0" styleClass="buttonValider" stylesheets="@../css/styleButton.css" text="VALIDER" />
+      <Button fx:id="btnAfficherAnnee" layoutX="917.0" layoutY="548.0" mnemonicParsing="false" onAction="#btnAfficherAnneeAction" prefHeight="22.0" prefWidth="115.0" styleClass="buttonActualiser" stylesheets="@../css/styleButton.css" text="ACTUALISER" />
+      <Label layoutX="642.0" layoutY="35.0" prefHeight="20.0" prefWidth="115.0" styleClass="labelTextFiel" stylesheets="@../css/styleLabe.css" text="Rechercher:">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="983.0" layoutY="35.0" prefHeight="20.0" prefWidth="115.0" styleClass="labelTextFiel" stylesheets="@../css/styleLabe.css" text="Supprimer:">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtResearchAnn" alignment="CENTER" layoutX="741.0" layoutY="34.0" prefHeight="25.0" prefWidth="180.0" promptText="entrer le nom de l'annee" styleClass="txtField" stylesheets="@../css/styleTxt.css" />
+      <TextField fx:id="txtDeleteAnn" alignment="CENTER" layoutX="1083.0" layoutY="34.0" prefHeight="25.0" prefWidth="180.0" promptText="entrer l'id de l'annee" styleClass="txtField" stylesheets="@../css/styleTxt.css" />
+      <Button fx:id="btnOKresearchAnn" layoutX="805.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnOKresearchAnnAction" styleClass="buttonOK" stylesheets="@../css/styleButton.css" text="OK">
+         <graphic>
+            <FontAwesomeIconView glyphName="SEARCH" size="13" />
+         </graphic>
+      </Button>
+      <Button fx:id="btnOKdeleteAnn" layoutX="1147.0" layoutY="71.0" mnemonicParsing="false" onAction="#btnOKdeleteAnnAction" styleClass="buttonOK" stylesheets="@../css/styleButton.css" text="OK">
+         <graphic>
+            <FontAwesomeIconView glyphName="YELP" size="13" />
+         </graphic>
+      </Button>
+      <Label layoutX="122.0" layoutY="65.0" prefHeight="25.0" prefWidth="57.0" text="Admin" textFill="#fffdfd">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="13.0" layoutY="140.0" prefHeight="3.0" prefWidth="186.0" />
+      <Label layoutX="228.0" layoutY="38.0" prefHeight="20.0" prefWidth="250.0" styleClass="labelHead" stylesheets="@../css/styleLabe.css" text="CREATION D'ANNEE" underline="true">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@styleBtn.css" />
+      <URL value="@../css/styleAllBackground.css" />
+   </stylesheets>
+</AnchorPane>

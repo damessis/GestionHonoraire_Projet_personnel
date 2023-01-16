@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1300.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionhonoraire.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="207.0" styleClass="leftPaneBackground" stylesheets="@../css/styleTxt.css">
+         <children>
+            <Button alignment="CENTER" graphicTextGap="7.0" layoutY="173.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="160.0" style="-fx-background-color: transparent;" stylesheets="@styleBtn.css" text="Fiche présence" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="USER" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+            <Pane layoutX="4.0" layoutY="2.0" prefHeight="144.0" prefWidth="207.0">
+               <children>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="HOME" layoutX="24.0" layoutY="58.0" size="25" />
+                  <Label layoutX="54.0" layoutY="38.0" prefHeight="25.0" prefWidth="113.0" text="Dashboard" textFill="#fcf9f9">
+                     <font>
+                        <Font name="Verdana Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="122.0" layoutY="64.0" prefHeight="25.0" prefWidth="57.0" text="Secre" textFill="#fffdfd">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button alignment="CENTER" graphicTextGap="7.0" layoutX="70.0" layoutY="227.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: transparent;" stylesheets="@styleBtn.css" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAffEnseiInfos" alignment="CENTER" graphicTextGap="7.0" layoutX="59.0" layoutY="232.0" mnemonicParsing="false" onAction="#btnAffEnseiInfosAction" prefHeight="38.0" prefWidth="144.0" style="-fx-background-color: transparent;" stylesheets="@styleBtn.css" text="Affichage" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="EYE" size="18" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtSecreIdEns" alignment="CENTER" layoutX="344.0" layoutY="142.0" prefHeight="29.0" prefWidth="220.0" promptText="entrer l'id de l'enseignant" styleClass="txtField" stylesheets="@../css/styleTxt.css" />
+      <TextField fx:id="txtSecreIdMat" alignment="CENTER" layoutX="342.0" layoutY="240.0" prefHeight="29.0" prefWidth="220.0" promptText="entrer l'id de la matiere" styleClass="txtField" stylesheets="@../css/styleTxt.css" />
+      <TextField fx:id="txtSecreIdAnn" alignment="CENTER" layoutX="344.0" layoutY="340.0" prefHeight="29.0" prefWidth="220.0" promptText="entrer l'id de l'annee" styleClass="txtField" stylesheets="@../css/styleTxt.css" />
+      <TextField fx:id="txtSecreIdSem" alignment="CENTER" layoutX="343.0" layoutY="440.0" prefHeight="29.0" prefWidth="220.0" promptText="entrer l'id du semestre" styleClass="txtField" stylesheets="@../css/styleTxt.css" />
+      <TextField fx:id="txtSecreHeu" alignment="CENTER" layoutX="346.0" layoutY="532.0" prefHeight="29.0" prefWidth="220.0" promptText="entrer l'heure ecoulee de l'enseignant" styleClass="txtField" stylesheets="@../css/styleTxt.css" />
+      <Label layoutX="220.0" layoutY="142.0" prefHeight="25.0" prefWidth="115.0" styleClass="labelTextFiel" stylesheets="@../css/styleLabe.css" text="id enseignant:">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="222.0" layoutY="242.0" prefHeight="25.0" prefWidth="115.0" styleClass="labelTextFiel" stylesheets="@../css/styleLabe.css" text="id matiere:">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="222.0" layoutY="340.0" prefHeight="25.0" prefWidth="115.0" styleClass="labelTextFiel" stylesheets="@../css/styleLabe.css" text="id annee:">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="222.0" layoutY="441.0" prefHeight="25.0" prefWidth="115.0" styleClass="labelTextFiel" stylesheets="@../css/styleLabe.css" text="id semestre:">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="532.0" prefHeight="26.0" prefWidth="123.0" styleClass="labelTextFiel" stylesheets="@../css/styleLabe.css" text="Heure ecoulee:">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnValiderSecre" layoutX="397.0" layoutY="592.0" mnemonicParsing="false" onAction="#btnValiderSecreAction" prefHeight="25.0" prefWidth="115.0" styleClass="buttonValider" stylesheets="@../css/styleButton.css" text="VALIDER" />
+      <Label layoutX="231.0" layoutY="58.0" prefHeight="20.0" prefWidth="315.0" text="CRETION DE LA FICHE D'UN ENSEIGNANT" underline="true">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableInfos" layoutX="770.0" layoutY="17.0" prefHeight="102.0" prefWidth="518.0" styleClass="tableview" stylesheets="@../css/styleTableView.css">
+         <columns>
+            <TableColumn fx:id="col_idSe" minWidth="0.0" prefWidth="121.0" text="ID" />
+            <TableColumn fx:id="col_nomSe" prefWidth="396.0" text="Nom" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnAffiInfoEns" layoutX="670.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnAffiInfoEnsAction" styleClass="buttonActualiser" stylesheets="@../css/styleButton.css" text="Enseignants" />
+      <Button fx:id="btnAffiInfoMat" layoutX="687.0" layoutY="259.0" mnemonicParsing="false" onAction="#btnAffiInfoMatAction" styleClass="buttonActualiser" stylesheets="@../css/styleButton.css" text="Matieres" />
+      <Button fx:id="btnAffiInfoAnn" layoutX="693.0" layoutY="412.0" mnemonicParsing="false" onAction="#btnAffiInfoAnnAction" styleClass="buttonActualiser" stylesheets="@../css/styleButton.css" text="Annees" />
+      <Button fx:id="btnAffiInfoSem" layoutX="681.0" layoutY="573.0" mnemonicParsing="false" onAction="#btnAffiInfoSemAction" prefHeight="25.0" prefWidth="80.0" styleClass="buttonActualiser" stylesheets="@../css/styleButton.css" text="Semestres" />
+      <Button fx:id="btnBackSecre" layoutX="24.0" layoutY="589.0" mnemonicParsing="false" onAction="#btnBackSecreAction" prefHeight="25.0" prefWidth="98.0" styleClass="buttonRetour" stylesheets="@../css/styleButton.css" text="Retour" />
+      <TableView fx:id="tableInfos2" layoutX="771.0" layoutY="167.0" prefHeight="125.0" prefWidth="518.0" styleClass="tableview" stylesheets="@../css/styleTableView.css">
+         <columns>
+            <TableColumn fx:id="col_idSe2" minWidth="0.0" prefWidth="121.0" text="ID" />
+            <TableColumn fx:id="col_nomSe2" prefWidth="396.0" text="Nom" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tableInfos3" layoutX="772.0" layoutY="320.0" prefHeight="125.0" prefWidth="518.0" styleClass="tableview" stylesheets="@../css/styleTableView.css">
+         <columns>
+            <TableColumn fx:id="col_idSe3" minWidth="0.0" prefWidth="121.0" text="ID" />
+            <TableColumn fx:id="col_nomSe3" prefWidth="396.0" text="Nom" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tableInfos4" layoutX="772.0" layoutY="482.0" prefHeight="125.0" prefWidth="518.0" styleClass="tableview" stylesheets="@../css/styleTableView.css">
+         <columns>
+            <TableColumn fx:id="col_idSe4" minWidth="0.0" prefWidth="121.0" text="ID" />
+            <TableColumn fx:id="col_nomSe4" prefWidth="396.0" text="Nom" />
+         </columns>
+      </TableView>
+      <Separator layoutX="11.0" layoutY="134.0" prefHeight="3.0" prefWidth="186.0" />
+   </children>
+   <stylesheets>
+      <URL value="@styleBtn.css" />
+      <URL value="@../css/styleAllBackground.css" />
+   </stylesheets>
+</AnchorPane>
