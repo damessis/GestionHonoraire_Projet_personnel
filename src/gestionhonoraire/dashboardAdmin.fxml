@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1300.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionhonoraire.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="207.0" stylesheets="@../css/styleAllBackground.css">
+         <children>
+            <Button fx:id="btnEnseignant" alignment="CENTER" graphicTextGap="7.0" layoutX="1.0" layoutY="163.0" mnemonicParsing="false" onAction="#btnEnseignantAction" prefHeight="38.0" prefWidth="211.0" styleClass="buttons" stylesheets="@../css/styleButton.css" text="Enseignant" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="USER" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMatiere" alignment="CENTER" graphicTextGap="7.0" layoutX="2.0" layoutY="231.0" mnemonicParsing="false" onAction="#btnMatiereAction" prefHeight="38.0" prefWidth="211.0" styleClass="buttons" stylesheets="@../css/styleButton.css" text="Matiere" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="BOOK" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFiliere" alignment="CENTER" graphicTextGap="7.0" layoutX="2.0" layoutY="301.0" mnemonicParsing="false" onAction="#btnFiliereAction" prefHeight="38.0" prefWidth="211.0" styleClass="buttons" stylesheets="@../css/styleButton.css" text="Filiere" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="ASTERISK" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnParcours" alignment="CENTER" graphicTextGap="7.0" layoutX="1.0" layoutY="363.0" mnemonicParsing="false" onAction="#btnParcoursAction" prefHeight="38.0" prefWidth="211.0" styleClass="buttons" stylesheets="@../css/styleButton.css" text="Parcours" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="MAP" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSemestre" alignment="CENTER" graphicTextGap="7.0" layoutX="2.0" layoutY="422.0" mnemonicParsing="false" onAction="#btnSemestreAction" prefHeight="38.0" prefWidth="211.0" styleClass="buttons" stylesheets="@../css/styleButton.css" text="Semestre" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="SCRIBD" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAnnee" alignment="CENTER" graphicTextGap="7.0" layoutX="1.0" layoutY="475.0" mnemonicParsing="false" onAction="#btnAnneeAction" prefHeight="38.0" prefWidth="211.0" styleClass="buttons" stylesheets="@../css/styleButton.css" text="Annee-academique" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="CHEVRON_RIGHT" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+            <Pane layoutX="4.0" layoutY="2.0" prefHeight="144.0" prefWidth="207.0">
+               <children>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="HOME" layoutX="24.0" layoutY="58.0" size="25" />
+                  <Label layoutX="54.0" layoutY="38.0" prefHeight="25.0" prefWidth="113.0" text="Dashboard" textFill="#fcf9f9">
+                     <font>
+                        <Font name="Verdana Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="122.0" layoutY="64.0" prefHeight="25.0" prefWidth="57.0" text="Admin" textFill="#fffdfd">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="10.0" layoutY="120.0" prefHeight="3.0" prefWidth="186.0" />
+               </children>
+            </Pane>
+            <Button fx:id="btnDeconnexion" layoutX="15.0" layoutY="596.0" mnemonicParsing="false" onAction="#btnDeconnexionAction" prefHeight="20.0" prefWidth="102.0" style="-fx-background-color: red;" text="Deconnexion" textFill="#fffefe">
+               <font>
+                  <Font name="Tw Cen MT" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUsers" alignment="CENTER" graphicTextGap="7.0" layoutX="17.0" layoutY="532.0" mnemonicParsing="false" onAction="#btnUsersAction" prefHeight="38.0" prefWidth="175.0" styleClass="buttons" stylesheets="@../css/styleButton.css" text="Users" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="USER_PLUS" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="leftPaneBackground" />
+            <String fx:value="background" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane layoutX="259.0" layoutY="84.0" prefHeight="330.0" prefWidth="999.0" styleClass="anchorPane" stylesheets="@../css/stypeAnchorPane.css">
+         <children>
+            <Text fill="#190737" layoutX="63.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En tant qu'administrateur vous pouvez créer un enseignant, les rechercher, les supprimer et les afficher dans un tableau avec toutes les informations..." wrappingWidth="746.13671875">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="#190737" layoutX="60.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ainsi vous pouvez aussi faire de même pour une matière, une filière, un parcours, un semestre et l'année-académique." wrappingWidth="601.13671875">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="128.0" fitWidth="180.0" layoutX="33.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/imgAdmin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="63.0" layoutY="151.0" prefHeight="38.0" prefWidth="198.0" text="ADMINISTRATION" textFill="#190737">
+               <font>
+                  <Font name="Britannic Bold" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="250.0" fitWidth="350.0" layoutX="595.0" layoutY="-64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img3Admin.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@styleBtn.css" />
+      <URL value="@../css/styleAllBackground.css" />
+   </stylesheets>
+</AnchorPane>

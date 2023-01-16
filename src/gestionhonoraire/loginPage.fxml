@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionhonoraire.FXMLDocumentController">
+   <children>
+      <TextField layoutX="651.0" layoutY="189.0" prefHeight="25.0" prefWidth="207.0" />
+      <ImageView fitHeight="507.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LoginpageGH.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="487.0" layoutY="125.0" prefHeight="254.0" prefWidth="385.0" style="-fx-background-color: white; -fx-border-radius: 10% 30% 50% 70%;">
+         <effect>
+            <DropShadow color="#050a17" height="77.34" radius="31.497500000000002" width="50.65" />
+         </effect>
+         <children>
+            <TextField fx:id="txtUsername" alignment="CENTER" layoutX="125.0" layoutY="52.0" prefHeight="30.0" prefWidth="207.0" promptText="user name" style="-fx-background-color: transparent; -fx-border-color: #274e8d; -fx-border-width: 0px 0px 3px 0px;">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="127.0" layoutY="139.0" prefHeight="30.0" prefWidth="207.0" promptText="pass word" style="-fx-background-color: transparent; -fx-border-color: #274e8d; -fx-border-width: 0px 0px 3px 0px;">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </PasswordField>
+            <FontAwesomeIconView fill="#274e8d" glyphName="USER" layoutX="41.0" layoutY="92.0" size="30" />
+            <FontAwesomeIconView fill="#274e8d" glyphName="KEY" layoutX="47.0" layoutY="180.0" size="30" />
+            <Hyperlink fx:id="passworForgetPage" layoutX="140.0" layoutY="213.0" onAction="#passworForgetPageAction" prefHeight="23.0" prefWidth="172.0" text="Mot de passe oublié ?">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnLogin" layoutX="606.0" layoutY="421.0" mnemonicParsing="false" onAction="#connexionLoginAction" prefHeight="28.0" prefWidth="159.0" style="-fx-background-color: #274e8d;" text="Connexion" textFill="#fffefe">
+         <font>
+            <Font name="Yu Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <FontAwesomeIconView fill="#07285e" glyphName="ACCOUNT_CIRCLE)" layoutX="636.0" layoutY="126.0" size="100" text="" />
+      <ImageView fitHeight="130.0" fitWidth="300.0" layoutX="103.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gh/images/welcome2.2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+.buttons{
+    -fx-background-color: transparent;
+}
+
+.buttonValider{
+    -fx-background-color: #039906;
+    -fx-font: bold 12pt "Tw Cen MT";
+}
+
+.buttonActualiser{
+    -fx-background-color: #7076FB;
+    -fx-font: Bold italic 12pt "Tw Cen MT";
+}
+
+.buttonOK{
+    -fx-background-color: #D4E286;
+    -fx-font:  italic 12pt "Tw Cen MT";
+}
+
+.buttonRetour{
+    -fx-background-color: #FE9143;
+    -fx-font:  bold 12pt "Bell MT";
+}

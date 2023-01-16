@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" styleClass="background" stylesheets="@../css/styleAllBackground.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionhonoraire.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="207.0" styleClass="leftPaneBackground" stylesheets="@../css/styleAllBackground.css">
+         <children>
+            <Button fx:id="btnEnseignantComp" alignment="CENTER" graphicTextGap="7.0" layoutY="173.0" mnemonicParsing="false" onAction="#btnEnseignantCompAction" prefHeight="38.0" prefWidth="160.0" style="-fx-background-color: transparent;" stylesheets="@styleBtn.css" text="Enseignant" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="USER" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCout" alignment="CENTER" graphicTextGap="7.0" layoutX="12.0" layoutY="244.0" mnemonicParsing="false" onAction="#btnCoutAction" prefHeight="38.0" prefWidth="96.0" style="-fx-background-color: transparent;" stylesheets="@styleBtn.css" text="Coûts" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="MONEY" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnComptablePay" alignment="CENTER" graphicTextGap="7.0" layoutX="6.0" layoutY="308.0" mnemonicParsing="false" onAction="#btnComptablePayAction" prefHeight="38.0" prefWidth="134.0" style="-fx-background-color: transparent;" stylesheets="@styleBtn.css" text="Payement" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="CARET_RIGHT" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </Button>
+            <Pane layoutX="4.0" layoutY="2.0" prefHeight="144.0" prefWidth="207.0">
+               <children>
+                  <FontAwesomeIconView fill="#f8f7f7" glyphName="HOME" layoutX="24.0" layoutY="58.0" size="25" />
+                  <Label layoutX="54.0" layoutY="38.0" prefHeight="25.0" prefWidth="113.0" text="Dashboard" textFill="#fcf9f9">
+                     <font>
+                        <Font name="Verdana Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="125.0" layoutY="69.0" prefHeight="25.0" prefWidth="57.0" text="Compta" textFill="#fffdfd">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnDeconnexion" layoutX="9.0" layoutY="576.0" mnemonicParsing="false" onAction="#btnDeconnexionAction" prefHeight="20.0" prefWidth="102.0" style="-fx-background-color: red;" text="Deconnexion" textFill="#fffefe">
+               <font>
+                  <Font name="Tw Cen MT" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="238.0" layoutY="88.0" prefHeight="300.0" prefWidth="800.0" styleClass="anchorPane" stylesheets="@../css/stypeAnchorPane.css">
+         <children>
+            <Text fill="#190737" layoutX="63.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En tant que comptable, vous pouvez valider le payement des honoraires des enseignantts par rapport aux états fourmis par la secrétaire..." wrappingWidth="746.13671875">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="#190737" layoutX="60.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Par ailleurs, s'il y'a des données non valides vous pouvez ne pas faire d'opération." wrappingWidth="601.13671875">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="128.0" fitWidth="180.0" layoutX="33.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/imgAdmin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="63.0" layoutY="137.0" prefHeight="38.0" prefWidth="198.0" text="COMPTABILITE" textFill="#190737">
+               <font>
+                  <Font name="Britannic Bold" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="250.0" fitWidth="350.0" layoutX="595.0" layoutY="-64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/imgComp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="12.0" layoutY="132.0" prefHeight="3.0" prefWidth="186.0" />
+   </children>
+</AnchorPane>

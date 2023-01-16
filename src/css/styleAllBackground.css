@@ -1,0 +1,8 @@
+.background{
+    -fx-background-color:  #ECCDE9;
+     /*-fx-background-color:   linear-gradient(to right top, #ceafd3, #caa7d0, #c6a0cc, #c298c9, #be91c5, #bd90c4, #bc8fc3, #bb8ec2, #bd93c4, #c099c6, #c29ec7, #c4a3c9);*/
+}
+
+.leftPaneBackground{
+    -fx-background-color:   #6D1A7A;
+}
